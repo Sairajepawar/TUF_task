@@ -49,25 +49,6 @@ app.get('/collect',async (req,res)=>{
             error:"Internal Server Error"
         })
     }
-    // temporarily we will not use database
-    // const data = [{
-    //     username: 'user1',
-    //     language: 'JavaScript',
-    //     stdin: 'Input 1',
-    //     code: 'console.log("Hello, World!");',
-    //     timestamp: '2024-03-20 10:00:00'
-    // },
-    // {
-    //     username: 'user2',
-    //     language: 'Python',
-    //     stdin: 'Input 2',
-    //     code: 'print("Hello, World!")',
-    //     timestamp: '2024-03-20 10:30:00'
-    // },
-    // ]
-    // return res.json({
-    //     entries: data,
-    // })
 })
 
 app.listen(process.env.PORT,()=>{
