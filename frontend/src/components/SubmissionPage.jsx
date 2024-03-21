@@ -4,7 +4,7 @@ function SubmissionPage() {
     const [submissions,createSubmissions] = useState([]);
     useEffect(() => {
     //     fetching the submissions
-        axios.get("http://localhost:3000/collect")
+        axios.get("https://tuf-task-gamma.vercel.app/collect")
             .then((response)=>{
                 if (Array.isArray(response.data.entries)) {
                     createSubmissions(response.data.entries);

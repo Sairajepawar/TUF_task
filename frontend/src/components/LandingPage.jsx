@@ -33,7 +33,7 @@ function LandingPage(){
         }
     //     make post request using axios
         try{
-            const response = await axios.post("http://localhost:3000/submit",request);
+            const response = await axios.post("https://tuf-task-gamma.vercel.app/submit",request);
             console.log(response.data);
         }
         catch(err){
