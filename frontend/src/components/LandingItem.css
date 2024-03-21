@@ -1,0 +1,10 @@
+.LandingItem{
+    width: 300px;
+}
+.mainLandingPage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
